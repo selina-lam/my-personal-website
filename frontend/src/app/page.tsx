@@ -7,7 +7,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="text-center py-20">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm <span className="text-blue-500">Your Name</span>
+            Hi, I&apos;m <span className="text-blue-500">Selina</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
             Full Stack Developer | Building Modern Web Applications

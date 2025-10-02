@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Project, ProjectCreate } from '@/types';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
 
@@ -20,12 +21,12 @@ export const projectsAPI = {
     return response.data;
   },
   
-  create: async (project: any) => {
+  create: async (project: ProjectCreate) => {
     const response = await api.post('/api/projects/', project);
     return response.data;
   },
   
-  update: async (id: number, project: any) => {
+  update: async (id: number, project: ProjectCreate) => {
     const response = await api.put(`/api/projects/${id}`, project);
     return response.data;
   },
